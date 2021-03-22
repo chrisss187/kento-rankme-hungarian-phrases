@@ -1,0 +1,933 @@
+//**********************************************  Valid Colors	********************************************************
+// {NORMAL}, {DARKRED}, {PINK}, {YELLOW}, {GREEN}, {LIGHTGREEN}, {RED}, {GRAY}, {BLUE}, {DARKBLUE}, {PURPLE}, {ORANGE} *
+//**********************************************************************************************************************
+//                                     http://i.imgur.com/q2wb8Cu.png                                                  *
+//{NORMAL} = x01 | {DARKRED} = x02 | {PINK} = x03 | {GREEN} = x04 | {YELLOW} = x09 | {LIGHTGREEN} = x06 | {RED} = x07  *
+//{GRAY} = x08 | {BLUE} = x0B | {DARKBLUE} = x0C | {PURPLE} = x0E|  {ORANGE} = x10                                     *
+//**********************************************************************************************************************
+
+"Phrases"
+{
+	//******************* PrintToChat *******************
+
+	"Chat Prefix"
+	{
+		"en"		"{BLUE}[CG]"
+		"hu"		"{BLUE}[CG]"
+	}
+
+	"ResetMyRank"
+	{
+		"en"		"{RED}Your rank has been reseted."
+		"hu"		"{RED}A rankod visszaállt."
+	}
+
+	"BombPickup"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"en"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}got {3} point(s) {NORMAL}for {RED}Picking up the Bomb{NORMAL}."
+		"hu"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}kapott {3} pontot {NORMAL}, amiért {RED}felvette a bombát{NORMAL}."
+	}
+
+	"BombDropped"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"en"		"{PINK}{1}{PURPLE} ({2}) {RED}lost {3} point(s) {NORMAL}for {RED}Dropping the Bomb{NORMAL}."
+		"hu"		"{PINK}{1}{PURPLE} ({2}) {RED}vesztett {3} pontot {NORMAL}, amiért {RED}eldobta a bombát{NORMAL}."
+	}
+
+	"MVP"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"en"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}got {3} point(s) {NORMAL}for being the {RED}MVP{NORMAL}."
+		"hu"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}kapott {3} pontot {NORMAL}, amiért {RED}MVP{NORMAL} lett."
+	}
+
+	"LostSuicide"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"en"		"{PINK}{1}{PURPLE} ({2}) {RED}lost {3} point(s) {NORMAL}for {RED}Suiciding{NORMAL}."
+		"hu"		"{PINK}{1}{PURPLE} ({2}) {RED}vesztett {3} pontot {NORMAL}, mert {RED}öngyilkos{NORMAL} lett."
+	}
+
+	"LostTK"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s}"
+		"en"		"{PINK}{1}{PURPLE} ({2}) {RED}lost {3} point(s) {NORMAL}for {RED}Team Killing {PINK}{4}{NORMAL}."
+		"hu"		"{PINK}{1}{PURPLE} ({2}) {RED}vesztett {3} pontot {NORMAL}, mert {RED}megölt egy csapattársat{PINK}{4}{NORMAL}."
+	}
+
+	"CT_VIPEscaped"
+	{
+		"#format"	"{1:d}"
+		"en"		"{BLUE}Counter-Terrorists{NORMAL} {LIGHTGREEN}got {1} point(s) {NORMAL}for {RED}Escaping as VIP{NORMAL}."
+		"hu"		"{BLUE}Anti-Terroristák{NORMAL} {LIGHTGREEN}kaptak {1} pontot {NORMAL}, amiért {RED}kiszabadították a VIP-et{NORMAL}."
+	}
+
+	"VIPEscaped"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"en"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}got {3} point(s) {NORMAL}for {RED}Escaping as VIP{NORMAL}."
+		"hu"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}kapott {3} pontot {NORMAL}, amiért {RED}kiszabadította a VIP-et{NORMAL}."
+	}
+
+	"TR_VIPKilled"
+	{
+		"#format"	"{1:d}"
+		"en"		"{ORANGE}Terrorists{NORMAL} {LIGHTGREEN}got {1} point(s) {NORMAL}for {RED}Killing the VIP{NORMAL}."
+		"hu"		"{ORANGE}Terroristák{NORMAL} {LIGHTGREEN}kaptak {1} pontot {NORMAL}, amiért {RED}megölték a VIP-et{NORMAL}."	
+	}
+
+	"VIPKilled"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"en"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}got {3} point(s) {NORMAL}for {RED}Killing the VIP{NORMAL}."
+		"hu"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}kapott {3} pontot {NORMAL}, amiért {RED}megölte a VIP-et{NORMAL}."
+	}
+
+	"GotPointsBy"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s}"
+		"en"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}got {3} point(s) {NORMAL}for {RED}{4}{NORMAL}."
+		"hu"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}kapott {3} ponto(-t/kat) {NORMAL}, amiért {RED}{4}{NORMAL}."
+	}
+
+	"IsRankedAt"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:d},{5:d},{6:d},{7:d},{8:.2f},{9:d},{10:d}"
+		"en"		"Player{PINK} {1} {NORMAL}is ranked at {GREEN}{2}/{3}{NORMAL}, {PURPLE}{4} pontot{NORMAL}, {LIGHTGREEN}{5} kills{NORMAL}, {RED}{6} deaths{NORMAL}, {ORANGE}{7} assists{NORMAL}, {BLUE}KDR {8}{NORMAL}, {DARKRED}{9} TKs {NORMAL}and {YELLOW}{10} MVPs{NORMAL}."
+		"en"		"{PINK} {1} {NORMAL} játékos helyezése: {GREEN}{2}/{3}{NORMAL}, {PURPLE}{4} ponttal{NORMAL}, {LIGHTGREEN}{5} öléssel{NORMAL}, {RED}{6} halállal{NORMAL}, {ORANGE}{7} assist-al{NORMAL}, {BLUE}KDR {8}{NORMAL}, {DARKRED}{9} TK-val {NORMAL}és {YELLOW}{10} MVP-vel{NORMAL}."
+	}
+
+	"Killing"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s},{5:d}"
+		"en"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}got {3} point(s) {NORMAL}for {RED}killing {PINK}{4} {PURPLE}({5}){NORMAL}."
+		"hu"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}kapott {3} pontot {NORMAL}, amiért {RED}megölte {PINK}{4} {PURPLE}({5}){NORMAL}."
+	}
+
+	"KillingKillerNotRanked"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s},{5:d},{6:d},{7:d}"
+		"en"		"{PINK}{1}{PURPLE} ({2})[{6}/{7}] {LIGHTGREEN}got {3} point(s) {NORMAL}for {RED}killing {PINK}{4} {PURPLE}({5}){NORMAL}."
+		"en"		"{PINK}{1}{PURPLE} ({2})[{6}/{7}] {LIGHTGREEN}kapott {3} pontot {NORMAL}, amiért {RED}megölte {PINK}{4} {PURPLE}({5}){NORMAL}."
+	}
+
+	"KillingVictimNotRanked"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s},{5:d},{6:d},{7:d}"
+		"en"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}got {3} point(s) {NORMAL}for {RED}killing {PINK}{4} {PURPLE}({5})[{6}/{7}]{NORMAL}."
+		"en"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}kapott {3} pontot {NORMAL}, amiért {RED}megölte {PINK}{4} {PURPLE}({5})[{6}/{7}]{NORMAL}."
+	}
+
+	"KillingBothNotRanked"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s},{5:d},{6:d},{7:d},{8:d},{9:d}"
+		"en"		"{PINK}{1}{PURPLE} ({2})[{6}/{7}] {LIGHTGREEN}got {3} point(s) {NORMAL}for {RED}killing {PINK}{4} {PURPLE}({5})[{8}/{9}]{NORMAL}."
+		"en"		"{PINK}{1}{PURPLE} ({2})[{6}/{7}] {LIGHTGREEN}kapott {3} pontot {NORMAL}, amiért {RED}megölte {PINK}{4} {PURPLE}({5})[{8}/{9}]{NORMAL}."
+	}
+
+	"Headshot"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"en"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}got {3} point {NORMAL}for {RED}Headshot{NORMAL}."
+		"hu"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}kapott {3} pontot {NORMAL}, a {RED}fejlövésért{NORMAL}."
+	}
+
+	"Flashed Kill"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"en"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}got {3} point {NORMAL}for {RED}Flashed Kill{NORMAL}."
+		"hu"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}kapott {3} pontot {NORMAL}, a {RED}vakított ölésért{NORMAL}."
+	}
+	
+	"Thru Smoke"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"en"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}got {3} point {NORMAL}for {RED}Through smoke{NORMAL}."
+		"en"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}kapott {3} pontot {NORMAL}, a {RED}füstlövésért{NORMAL}."
+	}
+
+	"Wallbang"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"en"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}got {3} point {NORMAL}for {RED}Wallbang{NORMAL}."
+		"en"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}kapott {3} pontot {NORMAL}, a {RED}Wallbang-ért{NORMAL}."
+	}
+
+	"First Blood"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"en"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}got {3} point {NORMAL}for {RED}First Blood{NORMAL}."
+		"en"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}kapott {3} pontot {NORMAL}, az {RED}első ölésért{NORMAL}."
+	}
+	
+	"No Scope"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s},{5:s},{6:.2f}"
+		"en"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}got {3} point {NORMAL}for {RED}noscoped {PINK}{4} {NORMAL}with {ORANGE}{5} {NORMAL}who was {RED}{6}{NORMAL} meters away."
+	}
+
+	"TR_Planting"
+	{
+		"#format"	"{1:d}"
+		"en"		"{ORANGE}Terrorists{NORMAL} {LIGHTGREEN}got {1} point(s) {NORMAL}for {RED}Planting the Bomb{NORMAL}."
+		"hu"		"{ORANGE}Terroristák{NORMAL} {LIGHTGREEN}kaptak {3} pontot {NORMAL}, a {RED}bomba lerakásért{NORMAL}."
+	}
+
+	"Planting"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"en"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}got {3} point(s) {NORMAL}for {RED}Planting the Bomb{NORMAL}."
+		"hu"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}kapott {3} pontot {NORMAL}, a {RED}bomba lerakásért{NORMAL}."
+	}
+
+	"TR_Exploding"
+	{
+		"#format"	"{1:d}"
+		"en"		"{ORANGE}Terrorists{NORMAL} {LIGHTGREEN}got {1} point(s) {NORMAL}for {RED}Exploding the Bomb{NORMAL}."
+		"hu"		"{ORANGE}Terroristák{NORMAL} {LIGHTGREEN}kaptak {3} pontot {NORMAL}, amiért {RED}felrobbant a bomba{NORMAL}."
+	}
+
+	"Exploding"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"en"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}got {3} point(s) {NORMAL}for {RED}Exploding the Bomb{NORMAL}."
+		"hu"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}kapott {3} pontot {NORMAL}, amiért {RED}felrobbant a bomba{NORMAL}."
+	}
+
+	"CT_Defusing"
+	{
+		"#format"	"{1:d}"
+		"en"		"{BLUE}Counter-Terrorists{NORMAL} {LIGHTGREEN}got {1} point(s) {NORMAL}for {RED}Defusing the Bomb{NORMAL}."
+		"hu"		"{BLUE}Anti-Terroristák{NORMAL} {LIGHTGREEN}kaptak {3} pontot {NORMAL}, amiért {RED}hatástalanították a bombát{NORMAL}."
+	}
+
+	"Defusing"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"en"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}got {3} point(s) {NORMAL}for {RED}Defusing the Bomb{NORMAL}."
+		"hu"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}kapott {3} pontot {NORMAL}, amiért {RED}hatástalanította a bombát{NORMAL}."
+	}
+
+	"CT_Hostage"
+	{
+		"#format"	"{1:d}"
+		"en"		"{BLUE}Counter-Terrorists{NORMAL} {LIGHTGREEN}got {1} point(s) {NORMAL}for {RED}Rescuing the Hostage{NORMAL}."
+		"hu"		"{BLUE}Anti-Terroristák{NORMAL} {LIGHTGREEN}kaptak {1} pontot {NORMAL}, amiért {RED}megmentették a túszt{NORMAL}."
+	}
+
+	"Hostage"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"en"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}got {3} point(s) {NORMAL}for {RED}Rescuing the Hostage{NORMAL}."
+		"hu"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}kapott {3} pontot {NORMAL}, amiért {RED}megmentette a túszt{NORMAL}."
+	}
+
+	"CT_Round"
+	{
+		"#format"	"{1:d}"
+		"en"		"{BLUE}Counter-Terrorists{NORMAL} {LIGHTGREEN}got {1} point(s) {NORMAL}for {RED}Winning the Round{NORMAL}."
+		"hu"		"{BLUE}Anti-Terroristák{NORMAL} {LIGHTGREEN}kaptak {1} pontot {NORMAL}, amiért {RED}megnyerték a kört{NORMAL}."
+	}
+	
+	"CT_Round_Lose"
+	{
+		"#format"	"{1:d}"
+		"en"		"{BLUE}Counter-Terrorists{NORMAL} {RED}losts {1} point(s) {NORMAL}for {RED}Losing the Round{NORMAL}."
+		"hu"		"{BLUE}Anti-Terroristák{NORMAL} {RED}vesztettek {1} pontot {NORMAL}, amiért {RED}elvesztették a kört{NORMAL}."
+	}
+
+	"TR_Round"
+	{
+		"#format"	"{1:d}"
+		"en"		"{ORANGE}Terrorists{NORMAL} {LIGHTGREEN}got {1} point(s) {NORMAL}for {RED}Winning the Round{NORMAL}."
+		"hu"		"{ORANGE}Terroristák{NORMAL} {LIGHTGREEN}kaptak {1} pontot {NORMAL}, amiért {RED}megnyerték a kört{NORMAL}."
+	}
+	
+	"TR_Round_Lose"
+	{
+		"#format"	"{1:d}"
+		"en"		"{ORANGE}Terrorists{NORMAL} {RED}losts {1} point(s) {NORMAL}for {RED}Losing the Round{NORMAL}."
+		"hu"		"{ORANGE}Terroristák{NORMAL} {RED}vesztettek {1} pontot {NORMAL}, amiért {RED}elvesztették a kört{NORMAL}."
+	}
+
+	"PlayerJoinedChat"
+	//{1} = ClientName | {2} = PosOnConnect | {3} = PointsOnConnect | {4} = Country
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s}"
+		"en"		"{PINK}{1}{NORMAL} from {LIGHTGREEN}{4} {NORMAL}joined the server. {YELLOW}(Pos {GREEN}{2} {YELLOW}- {PURPLE}{3} {YELLOW}Points){NORMAL}."
+		"hu"		"{PINK}{1}{NORMAL} játékos {NORMAL}felcsatlakozott a szerverre, innen: {LIGHTGREEN}{4}! {YELLOW}(Pozíciója: {GREEN}{2} {YELLOW}- {PURPLE}{3} {YELLOW}ponttal){NORMAL}."
+	}
+
+	"TopPlayerJoinedChat"
+	{
+		"#format"	"{1:d},{2:s},{3:d},{4:s}"
+		"en"		"Top {RED}{1}{NORMAL} player {PINK}{2}{NORMAL} from {LIGHTGREEN}{4} {NORMAL}connected, currently rank {GREEN}{3}{NORMAL}."
+		"hu"		"Top {RED}{1}{NORMAL} játékos: {PINK}{2}{NORMAL} csatlakozott a szerverre, innen: {LIGHTGREEN}{4}, jelenlegi rankja {GREEN}{3}{NORMAL}."
+	}
+
+	"PlayerLeft"
+	//{1} = ClientName | {2} = rank | {3} = Reason
+	{
+		"#format"	"{1:s},{2:d},{3:s}"
+		"en"		"{PINK}{1}{PURPLE} ({2}) {NORMAL}left the server. {YELLOW}({3})"
+		"hu"		"{PINK}{1}{PURPLE} ({2}) {NORMAL}lecsatlakozott a szerverről. {YELLOW}({3})"
+	}
+
+	"NotRanked"
+	{
+		"#format"	"{1:d},{2:d}"
+		"en"		"{RED}Not ranked yet. {NORMAL}You need {RED}{2}{NORMAL} kills for entering the rank. Current {LIGHTGREEN}{1}{NORMAL}."
+		"hu"		"{RED}Nincs rankod még. {NORMAL}Ha szeretnél {RED}{2}{NORMAL} ölnöd kell ellenfeleket. Jelenlegi: {LIGHTGREEN}{1}{NORMAL}."
+	}
+
+	"AssistKill"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s},{5:s}"
+		"en"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}got {3} point {NORMAL}for {RED}Assist {PINK}{4} {RED}to Kill {PINK}{5}{NORMAL}."
+		"hu"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}kapott {3} pontot {NORMAL}, amiért {RED}segített {PINK}{4}-nak/-nek ({PINK}{5}) {RED}megölésében{NORMAL}."
+	}
+
+	"AssistFlash"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s},{5:s}"
+		"en"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}got {3} point {NORMAL}for {RED}Assist {PINK}{4} {RED}to Flash {PINK}{5}{NORMAL}."
+		"hu"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}kapott {3} pontot {NORMAL}, amiért {RED}segített {PINK}{4}-nak/-nek {PINK}{5} {RED}vakításában{NORMAL}."
+	}
+
+	"AssistTeamKill"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s},{5:s}"
+		"en"		"{PINK}{1}{PURPLE} ({2}) {RED}lost {3} point {NORMAL}for {RED}Assist {PINK}{4} {RED}to Kill teammate {PINK}{5}{NORMAL}."
+		"hu"		"{PINK}{1}{PURPLE} ({2}) {RED}vesztett {3} pontot {NORMAL}, amiért {RED}segített {PINK}{4}-nak/-nek {RED}megölni a csapattársukat: {PINK}{5}{NORMAL}."
+	}
+
+	"AssistTeamFlash"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s},{5:s}"
+		"en"		"{PINK}{1}{PURPLE} ({2}) {RED}lost {3} point {NORMAL}for {RED}Assist {PINK}{4} {RED}to Flash teammate {PINK}{5}{NORMAL}."
+		"hu"		"{PINK}{1}{PURPLE} ({2}) {RED}vesztett {3} pontot {NORMAL}, amiért {RED}segített {PINK}{4} {RED}bevakítani a csapattársukat: {PINK}{5}{NORMAL}."
+	}
+
+	"The rank has been reset"
+	{
+		"en"		"{RED}The rank has been reset."
+		"hu"		"{RED}A rankod nullázódott."
+	}
+
+	"All rank data has been reset"
+	{
+		"en"		"{RED}All rank data has been reset."
+		"hu"		"{RED}Az összes rank adat nullázódott."
+	}
+
+	"Usagepurge"
+	{
+		"en"		"{RED}Usage: {PINK}rankpurge X (where X equals number of days of inactivity)"
+	}
+
+	"Purged"
+	{
+		"en"		"{RED}Purged"
+	}
+
+	"UsageStatsme2"
+	{
+		"en"		"{RED}Usage: {PINK}sm_statsme2 <name | #position on top | steam>"
+	}
+	
+	"Hide Rankme Chat"
+	{
+		"en"		"{RED}Hide Rankme chat messages."
+		"hu"		"{RED}Rankme üzeneteinek elrejtése."
+	}
+	
+	"Show Rankme Chat"
+	{
+		"en"		"{LIGHTGREEN}Show Rankme chat messages."
+		"hu"		"{RED}Rankme üzeneteinek megjelenítése."
+	}
+	
+	"CT_Win"
+	{
+		"#format"	"{1:d}"
+		"en"		"{BLUE}Counter-Terrorists{NORMAL} {LIGHTGREEN}got {1} point(s) {NORMAL}for {RED}winning the match{NORMAL}."
+		"hu"		"{BLUE}Anti-Terroristák{NORMAL} {LIGHTGREEN}kapott {1} pontot {NORMAL}, amiért {RED}megnyerték a meccset{NORMAL}."
+	}
+	
+	"TR_Win"
+	{
+		"#format"	"{1:d}"
+		"en"		"{ORANGE}Terrorists{NORMAL} {LIGHTGREEN}got {1} point(s) {NORMAL}for {RED}winning the match{NORMAL}."
+		"hu"		"{ORANGE}Terroristák{NORMAL} {LIGHTGREEN}kapott {1} pontot {NORMAL}, amiért {RED}megnyerték a meccset{NORMAL}."
+	}
+	
+	"CT_Lose"
+	{
+		"#format"	"{1:d}"
+		"en"		"{BLUE}Counter-Terrorists {RED}losts {1} point(s) {NORMAL}for {RED}losing the match{NORMAL}."
+		"hu"		"{BLUE}Anti-Terroristák {RED}vesztettek {1} pontot {NORMAL}, amiért {RED}elvesztették a meccset{NORMAL}."
+	}
+	
+	"TR_Lose"
+	{
+		"#format"	"{1:d}"
+		"en"		"{ORANGE}Terrorists {RED}losts {1} point(s) {NORMAL}for {RED}losing the match{NORMAL}."
+		"hu"		"{ORANGE}Terroristák {RED}vesztettek {1} pontot {NORMAL}, amiért {RED}elvesztették a meccset{NORMAL}."
+	}
+	
+	"Draw"
+	{
+		"#format"	"{1:d}"
+		"en"		"{RED}Match draw{NORMAL}, {PINK}Both teams {LIGHTGREEN}got {1} point(s) {NORMAL}."
+		"hu"		"{RED}Döntetlen meccs{NORMAL}, ezért {PINK}mindkét csapat {LIGHTGREEN}kapott {1} pontot {NORMAL}."
+	}
+	
+	"RankCooldown"
+	{
+		"#format"	""
+		"en"		"{RED}We know you are the best player, please stop spamming!"
+		"hu"		"{RED}Tudjuk hogy te vagy a legjobb játékos, szóval hagyd abba a spammelést!"
+	}
+	
+	//****************** PrintHintText ******************
+
+	"PlayerJoinedHint"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s}"
+		"en"		"<font color='#28FF28'>Info</font> \n <font color='#B15BFF'>{1}</font> from <font color='#00FF7F'>{4}</font> joined the server. \n Pos <font color='#28FF28'>{2}</font> - <font color='#E800E8'>{3}</font> Points"
+	}
+
+	"TopPlayerJoinedHint"
+	{
+		"#format"	"{1:d},{2:s},{3:d},{4:s}"
+		"en"		"<font color='#28FF28'>Info</font> \n Top <font color='#FF0000'>{1}</font> player <font color='#B15BFF'>{2}</font> from <font color='#00FF7F'>{4}</font> connected \n Currently rank <font color='#28FF28'>{3}</font>"
+	}
+
+	//***************** Menu (No Colors) *****************
+
+	"Deaths"
+	{
+		"en"		"Deaths"
+		"hu"		"Halálok"
+	}
+
+
+	"Kills"
+	{
+		"en"		"Kills"
+		"hu"		"Ölések"
+	}
+
+	"VIPStats"
+	{
+		"en"		"VIP Statistics"
+		"hu"		"VIP Statisztikák"
+	}
+
+	"VIPEscapes"
+	{
+		"en"		"Escapes as VIP"
+		"hu"		"Kiszabadulás VIP-ként"
+	}
+
+	"VIPsKilled"
+	{
+		"en"		"VIPs Killed"
+		"hu"		"VIP-t megöltek"
+	}
+
+	"Showing"
+	{
+		"#format"	"{1:d},{2:d},{3:d}"
+		"en"		"Showing from {1} to {2} of {3}\n"
+	}
+
+	"Next"
+	{
+		"en"		"Next"
+		"hu"		"Következő"
+	}
+
+	"Back"
+	{
+		"en"		"Back"
+		"hu"		"Vissza"
+	}
+
+	"KnifeKills"
+	{
+		"en"		"Knife Kills"
+		"hu"		"Késes ölések"
+	}
+
+	"TaserKills"
+	{
+		"en"		"Taser Kills"
+		"hu"		"Sokkoló ölések"
+	}
+
+	"Position"
+	{
+		"en"		"Position"
+		"hu"		"Pozíció"
+	}
+
+	"Points"
+	{
+		"en"		"Points"
+		"hu"		"Pontok"
+	}
+
+	"BasicStats"
+	{
+		"en"		"Basic Stats"
+		"hu"		"Alap statisztikák"
+	}
+
+	"KillsDeathsAssists"
+	{
+		"#format"	"{1:d},{2:d},{3:d}"
+		"en"		"Kills: {1}   Deaths: {2}   Assists: {3}"
+		"hu"		"Ölések: {1}, Halálok: {2}, Segítségek: {3}"
+	}
+
+	"AssistTeams"
+	{
+		"#format"	""
+		"en"		"Assist Team Kills"
+		"hu"		"Segítség csapattársak megölésében"
+	}
+
+	"Suicides"
+	{
+		"en"		"Suicides"
+		"hu"		"Öngyilkosságok"
+	}
+
+	"RoundStats"
+	{
+		"en"		"Rounds Stats"
+		"hu"		"Kör eredmények"
+	}
+
+	"TRWins"
+	{
+		"en"		"TR's Wins"
+		"hu"		"T-ként nyertek"
+	}
+
+	"CTWins"
+	{
+		"en"		"CT's Wins"
+		"hu"		"CT-ként nyertek"
+	}
+
+	"HitStats"
+	{
+		"en"		"Hit Stats"
+		"hu"		"Sebzés statisztikák"
+	}
+
+	"Shots"
+	{
+		"en"		"Shots"
+		"hu"		"Lövések"
+	}
+
+	"Hits"
+	{
+		"en"		"Hits"
+		"hu"		"Sebzések"
+	}
+
+	"Accuracy"
+	{
+		"en"		"Accuracy"
+		"hu"		"Pontosság"
+	}
+
+	"BombHostagesStats"
+	{
+		"en"		"Bombs/Hostages Stats"
+		"hu"		"Bomba/Túsz statisztikák"
+	}
+
+	"PlantedBombs"
+	{
+		"en"		"Planted Bombs"
+		"hu"		"Élesített bombák"
+	}
+
+	"DefusedBombs"
+	{
+		"en"		"Defused Bombs"
+		"hu"		"Hatástalanítot bombák"
+	}
+
+	"ExplodedBombs"
+	{
+		"en"		"Exploded Bombs"
+		"hu"		"Felrobbant bombák"
+	}
+
+	"RescuedHostages"
+	{
+		"en"		"Rescued Hostages"
+		"hu"		"Kimenekített túszok"
+	}
+
+	"OtherStats"
+	{
+		"en"		"Other Stats"
+		"hu"		"Egyéb statisztikák"
+	}
+
+	"TimeConnected"
+	{
+		"#format"	"{1:d},{2:d},{3:d}"
+		"en"		"Time connected: {1} hours, {2} minutes, {3} seconds"
+		"hu"		"Játékídő a szerveren: {1} óra, {2} perc, {3} másodperc"
+	}
+
+	"Head"
+	{
+		"en"		"Head"
+		"hu"		"Fej"
+	}
+
+	"Chest"
+	{
+		"en"		"Chest"
+		"hu"		"Mell"
+	}
+
+	"Stomach"
+	{
+		"en"		"Stomach"
+		"hu"		"Has"
+	}
+
+	"LeftArm"
+	{
+		"en"		"Left Arm"
+		"hu"		"Bal kéz"
+	}
+
+	"LeftLeg"
+	{
+		"en"		"Left Leg"
+		"hu"		"Bal láb"
+	}
+
+	"RightArm"
+	{
+		"en"		"Right Arm"
+		"hu"		"Jobb kéz"
+	}
+
+	"RightLeg"
+	{
+		"en"		"Right Leg"
+		"hu"		"Jobb láb"
+	}
+
+	"Next9Players"
+	{
+		"en"		"Next 9 players"
+		"hu"		"Következő 9 játékos"
+	}
+
+	"WeaponsStats"
+	{
+		"en"		"Weapon Statistics"
+		"hu"		"Fegyver statisztikák"
+	}
+
+	"Headshots"
+	{
+		"en"		"Headshots"
+		"hu"		"Fejlövések"
+	}
+
+	"Assists"
+	{
+		"en"		"Assists"
+		"hu"		"Segítségek"
+	}
+
+	"TKs"
+	{
+		"en"		"TKs"
+		"hu"		"TK-k"
+	}
+
+	"RankMe Menu"
+	{
+		"en"		"RankMe Menu"
+		"hu"		"RankMe Menü"
+	}
+
+	"My Rank"
+	{
+		"en"		"My Rank"
+		"hu"		"Rankom"
+	}
+
+	"Reset My Rank"
+	{
+		"en"		"Reset My Rank"
+		"hu"		"Rankom nullázása"
+	}
+
+	"My Stats"
+	{
+		"en"		"My Stats"
+		"hu"		"Statisztikáim"
+	}
+
+	"Show Other Players Stats"
+	{
+		"en"		"Show Other Players Stats"
+		"hu"		"Más játékos statisztikái"
+	}
+
+	"Session"
+	{
+		"en"		"Session"
+		"hu"		"Munkamenet"
+	}
+
+	"My HitBox Stats"
+	{
+		"en"		"My HitBox Stats"
+		"hu"		"HitBox statisztikáim"
+	}
+
+	"My Weapon Stats"
+	{
+		"en"		"My Weapon Stats"
+		"hu"		"Fegyverem statisztikái"
+	}
+
+	"Show Players Above Me"
+	{
+		"en"		"Show Players Above Me"
+		"hu"		"Jobb játékosok megmutatása"
+	}
+
+	"TOP 10"
+	{
+		"en"		"TOP 10"
+	}
+
+	"TOP Kills"
+	{
+		"en"		"TOP Kills"
+		"hu"		"TOP ölések"
+	}
+
+	"TOP Deaths"
+	{
+		"en"		"TOP Deaths"
+		"hu"		"TOP halálok"
+	}
+
+	"TOP Assists"
+	{
+		"en"		"TOP Assists"
+		"hu"		"TOP segítségek"
+	}
+
+	"TOP KDR"
+	{
+		"en"		"TOP KDR"
+	}
+
+	"TOP TK"
+	{
+		"en"		"TOP TK"
+	}
+
+	"TOP Weapon"
+	{
+		"en"		"TOP Weapon"
+		"hu"		"Legjobb fegyver"
+	}
+
+	"TOP Accuracy"
+	{
+		"en"		"TOP Accuracy"
+		"hu"		"Legjobb pontosság"
+	}
+
+	"TOP HS"
+	{
+		"en"		"TOP HS"
+	}
+
+	"TOP Time Connected"
+	{
+		"en"		"TOP Time Connected"
+		"hu"		"Legtöbb eltöltött idő"
+	}
+
+	"TOP Points"
+	{
+		"en"		"TOP Points"
+		"hu"		"Legtöbb pont/-ok"
+	}
+
+	"Reset a player rank"
+	{
+		"en"		"Reset a player rank"
+		"hu"		"Játékos rankjának nullázása"
+	}
+
+	"Reset all the rank"
+	{
+		"en"		"Reset All The Rank"
+		"hu"		"Összes rank nullázása"
+	}
+
+	"MVPs"
+	{
+		"en"		"MVPs"
+		"hu"		"MVP-k"
+	}
+
+	"TOP MVP"
+	{
+		"en"		"TOP MVP"
+	}
+
+	"KPR"
+	{
+		"en"		"KPR"
+	}
+
+	"DPR"
+	{
+		"en"		"DPR"
+	}
+
+	"Damage"
+	{
+		"en"		"Damage"
+		"hu"		"Sebzés"
+	}
+	
+	"TOP Damage"
+	{
+		"en"		"TOP Damage"
+		"hu"		"Legtöbb sebzés"
+	}
+	
+	"MatchWins"
+	{
+		"en"		"Match Wins"
+		"hu"		"Győztes meccsek"
+	}
+	
+	"MatchLosses"
+	{
+		"en"		"Match Losses"
+		"hu"		"Vesztes meccsek"
+	}
+	
+	"MatchDraws"
+	{
+		"en"		"Match Draws"
+		"hu"		"Döntetlen meccsek"
+	}
+	
+	"First Bloods"
+	{
+		"en"		"First Bloods"
+		"hu"		"Első vér"
+	}
+
+	"Thru Smokes"
+	{
+		"en"		"Through Smokes"
+		"hu"		"Füstlövések"
+	}
+
+	"Flashed Kills"
+	{
+		"en"		"Flashed Kills"
+		"hu"		"Vakított ölések"
+	}
+
+	"AssistFlashes"
+	{
+		"en"		"Assist Flashes"
+		"hu"		"Villanógránátos segítségek"
+	}
+
+	"AssistTeamFlashes"
+	{
+		"en"		"Assist Team Flashes"
+		"hu"		"Cs.társ villanógránátos segítségek"
+	}
+	
+	"NoScopeStats"
+	{
+		"en"		"No Scope Stats"
+		"hu"		"No Scope statisztikák"
+	}
+	
+	"NoScopes"
+	{
+		"en"		"No Scopes"
+		"hu"		"No Scope-ok"
+	}
+	
+	"Farthest"
+	{
+		"en"		"Farthest"
+		"hu"		"Legmesszebb"
+	}
+
+	"TOP First Blood"
+	{
+		"en"		"TOP First Blood"
+		"hu"		"TOP Első vér"
+	}
+
+	"TOP Noscope"
+	{
+		"en"		"TOP Noscope"
+	}
+
+	"TOP Noscope Distance"
+	{
+		"en"		"TOP Noscope Distance"
+		"hu"		"Legnagyobb Noscope távolság"
+	}
+
+	"TOP Flashed Kill"
+	{
+		"en"		"TOP Flashed Kill"
+		"hu"		"Legtöbb vakított ölés"
+	}
+
+	"TOP Thru Smoke"
+	{
+		"en"		"TOP Through Smoke"
+		"hu"		"Legtöbb füstlövés"
+	}
+
+	"TOP Wallbang"
+	{
+		"en"		"TOP Wallbang"
+		"hu"		"Legtöbb Wallbang"
+	}
+
+	"Wallbangs"
+	{
+		"en"		"Wallbangs"
+		"hu"		"Wallbang-ek"
+	}
+}
